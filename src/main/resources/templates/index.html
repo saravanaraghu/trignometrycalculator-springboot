@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trignometric Calculations</title>
+    <link rel="stylesheet" th:href="@{css/demo.css}">
+</head>
+<body>
+<div>
+    <form th:action="@{/action}" method="get">
+    <h1 class="font">Select a theta and enter the angle</h1>
+    <h1>Angles</h1>
+    <table>
+        <tr>
+            <td>
+                <select name="select">
+                    <option>Sine</option>
+                    <option>Cosine</option>
+                    <option>Tangent</option>
+                    <option>Secant</option>
+                    <option>Cosecant</option>
+                    <option>Cotangent</option>
+
+                </select>
+            </td>
+        </tr>
+    </table>
+    <input type="text" name="id">
+    <input type="submit" value="Save">
+    </form>
+</div>
+</body>
+</html>
